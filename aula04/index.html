@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+
+    <h2>Negrito / Destaque</h2>
+    <p>Na frase temos uma <b>parte do texto em negrito</b> usando a tag B (não semântica)</p>
+    <p>Na frase temos uma <strong>parte do texto em negrito</strong> usando a tag strong (semântica)</p>
+
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase vamos entrar com uma palavra em <i>itálico</i> usando a tag i (não semântica)</p>
+    <p>Nesta frase vamos entrar com uma palavra em <em>itálico</em> usando a tag EM (com semântica)</p>
+
+    <h2>Texto Marcador</h2>
+    
+    <p><mark style="background-color: greenyellow;">Aqui vamos usar um texto com destaque de marcador de texto usando mark</mark></p>
+    <p><mark>Aqui vamos usar um texto com destaque de marcador de texto usando mark</mark></p>
+
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos trabalhando aqui com um <big>texto grande</big> e um <small>texto pequeno</small> nesta frase</p>
+
+    <h2>Texto deletado</h2>
+    <p>Neste parágrafo vamos trabalhar com um texto <del>que foi excluído</del> da frase (forma semântica)</p>
+
+    <h2>Texto inserido</h2>
+    <p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase de forma semântica</p>
+    <p>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u> na frase de forma não semântica</p>
+
+    <h2>Texto sobrescrito</h2>
+    <p>Vamos demonstrar uma fórmula da equação do segundo grau ax<sup>2</sup>+bx+c=0 usando tag sup</p>
+
+    <h2>Texto subescrito</h2>
+
+    <p>Vamos demonstrar o texto subescrito com a fórmula da água H<sub>2</sub>O</p>
+
+    <h2>Trecho de código fonte</h2>
+    <p>Neste exemplo vou demonstrar um trecho de código</p>
+    <p>Inserindo o comando <code>document.getElementById('edtCodigo')</code> que é um comando java script</p>
+    <p>Inserindo um longo código em python:</p>
+    <pre><code>
+        # Exemplo simples de verificação de aprovação
+        nome = input("Digite o nome do aluno: ")
+        nota1 = float(input("Digite a primeira nota: "))
+        nota2 = float(input("Digite a segunda nota: "))
+
+        # Cálculo da média
+        media = (nota1 + nota2) / 2
+
+        print(f"Aluno: {nome} - Média: {media}")
+
+        # Estrutura condicional
+        if media >= 7.0:
+            print("Resultado: Aprovado!")
+        else:
+            print("Resultado: Reprovado.")
+    </code></pre>
+
+    <h2>Citações (quotation) simples</h2>
+    <p>Segundo Steve Jobs <q>A tecnologia move o mundo</q></p>
+
+    <h2>Citações completas (livros)</h2>
+    <p>Segundo Sandra Kussunoki no seu livro A dança e o ventre
+    <blockquote>
+        Dados existentes sobre intervenções cirúrgicas nos corpos contemporâneos visando à obtenção de um corpo mais
+         próximo do padrão estético tais como lipoaspiração, próteses de silicone, entre outras, comprovam essa busca obssessiva 
+         pelo ideal de perfeição, que é baseado principalmente na magreza.
+    </blockquote>
+    </p>
+
+    <h2>Abreviações</h2>
+    <p>Estamos estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+
+    <h2>Texto Invertido</h2>
+    <p>Estou estudando HTML</p>
+    <p><bdo dir="rtl">Estou estudando HTML</bdo></p>
+
+
+</body>
+</html>
