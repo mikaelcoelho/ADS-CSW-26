@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+.nunito-sans-titulo {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    font-size: 2vw;
+    margin-left: 2vw;
+}
+
+.nunito-sans-texto {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    font-size: 1vw;
+}
+
+.secao-inicial {
+    display: flex;
+    background-image: url(capa.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 20vw;
+    flex-direction: column;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    font-size: 1vw;
+
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(to right, rgb(242, 254, 255), rgb(170, 221, 255));
+}
+
+.navbar-container a {
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
+    font-size: 1vw;
+    padding: 1vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    text-decoration: none;
+    color: rgb(55, 35, 9)
+}
+
+.navbar-container a:hover {
+    color: rgb(15, 71, 92)
+}
+
+
+
+
+.conteudo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 2vw;
+    padding-left: 2vw;
+    align-content: space-around;
+    justify-content: center;
+}
+
+.conteudo ol {
+    padding: 0;
+    list-style-type: none;
+    counter-reset: meu-contador;
+}
+
+.conteudo ol li{
+    counter-increment: meu-contador;
+    margin-top:1vw;
+
+}
+
+.conteudo ol li::before {
+    content: counter(meu-contador);
+    background: rgb(128, 212, 243);
+    width: 2vw;
+    height: 2vw;
+    border-radius: 1vw;
+    display: inline-block;
+    line-height: 2vw;
+    color: white;
+    text-align: center;
+    margin-right: 0.5vw;
+}
+
+.grid-container{
+    display:flex;
+    flex-wrap: wrap;
+    gap:2vw;
+    justify-content: center;
+    margin-left:2vw;
+    margin-right:2vw;
+
+}
