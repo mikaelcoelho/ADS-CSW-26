@@ -1,5 +1,5 @@
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 
 }
 
@@ -199,8 +199,49 @@ body {
 
 
 .voltar-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+.voltar-inicio a{
+    display: flex;
+    text-decoration: none;
+    font-size: 2vw;
+    width:20vw;
+    height:5vw;
+    background-image:linear-gradient(white,white), linear-gradient(to right,rgb(213, 243, 246), rgb(170, 221, 255));
+    border:0.2vw solid transparent;
+    border-radius: 1vw;
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    align-items: center;
+    justify-content: space-around;
+    color:#5dccff;
+    
+}
+
+.voltar-inicio a img{
+    margin-top: 0.5vw;
+    height:3vw;
+
+}
 
 
+
+.voltar-inicio a:hover{
+    background-image: linear-gradient(to right,rgb(213, 243, 246), rgb(170, 221, 255));
+    color:white;
+
+}
+
+.voltar-inicio a:hover img{
+    filter:brightness(0) invert(1);
+
+    
 }
 
 
