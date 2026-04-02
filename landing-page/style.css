@@ -1,6 +1,12 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "Nunito Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100,
+        "YTLC" 500;
 
 }
 
@@ -29,7 +35,7 @@ body {
 
 .secao-inicial {
     display: flex;
-    background-image: url(capa.jpg);
+    background-image: url(imgs/capa.jpg);
     background-size: cover;
     background-position: center;
     height: 20vw;
@@ -65,15 +71,20 @@ body {
     margin-left: 1vw;
     margin-right: 1vw;
     text-decoration: none;
-    color: rgb(55, 35, 9)
+    color: rgb(55, 35, 9);
 }
 
 .navbar-container a:hover {
     color: rgb(15, 71, 92)
 }
 
-
-
+.conteudo-inicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:5vw;
+    margin-bottom:3vw;
+}
 
 .conteudo {
     display: flex;
@@ -93,6 +104,11 @@ body {
 .conteudo ol li{
     counter-increment: meu-contador;
     margin-top:1vw;
+    align-self: flex-start;
+    list-style-position: outside;
+    display: flex;
+    align-items: center;
+    flex-shrink: 2;
 
 }
 
@@ -102,7 +118,9 @@ body {
     width: 2vw;
     height: 2vw;
     border-radius: 1vw;
-    display: inline-block;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
     line-height: 2vw;
     color: white;
     text-align: center;
@@ -112,9 +130,56 @@ body {
 .grid-container{
     display:flex;
     flex-wrap: wrap;
-    gap:2vw;
+    gap:5vw;
     justify-content: center;
-    margin-left:2vw;
-    margin-right:2vw;
+    align-items: center;
+
+
+}
+
+.subclasse{
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    
+
+    
+
+}
+
+.subclasse div{
+    width:20vw;
+    height:2vw;
+    color:rgb(128, 212, 243);
+    text-align: center; 
+    align-items: center;
+    display:flex;
+    justify-content: center;
+    border-radius: 1vw;
+    font-size:1.5vw;
+    font-weight:400;
+
+}
+
+.subclasse-separador{
+    height:15vh;
+    border-right:0.3vw solid rgb(128, 212, 243);
+    align-content: center;
+    display: flex;
+
+}
+
+.subclasse-itens{
+    width:8vw;
+    height:5vw;
+    display:flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.subclasse-itens img{
+    max-width: 5vw;
+    min-width:5vw;
 
 }
