@@ -80,10 +80,12 @@ body {
     margin-right: 1vw;
     text-decoration: none;
     color: rgb(55, 35, 9);
+    transition: all 0.5s;
 }
 
 .navbar-container a:hover {
-    color: rgb(15, 71, 92)
+    color: rgb(18, 126, 165);
+    
 }
 
 .conteudo-inicio{
@@ -167,7 +169,7 @@ body {
     display:flex;
     justify-content: center;
     border-radius: 1vw;
-    font-size:1.5vw;
+    font-size:1.3vw;
     font-weight:400;
     background-color: white;
     box-shadow: 0.4vw 0.4vw 0.8vw rgba(0, 0, 0, 0.164);
@@ -196,6 +198,113 @@ body {
 
 }
 
+.servicos{
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+}
+
+table{
+    background-color: rgb(255, 255, 255);
+    width:40vw;
+    font-size: 1.3vw;
+    color:#5dccff;
+    border-radius: 0.8vw;
+    box-shadow: 0.4vw 0.4vw 0.8vw rgba(0, 0, 0, 0.164);
+    border-collapse: collapse;
+    overflow: hidden;
+}
+
+th{
+    padding:1vw;
+    background-color: #5dccff;
+    color:white;
+
+}
+
+td{
+    padding-left:1vw;
+}
+
+table tr:last-child td{
+    padding-bottom: 1vw;
+
+}
+table tr:nth-child(2) td{
+    padding-top: 1vw;
+ }
+
+.contato{
+    display: flex;
+    justify-content: center;
+
+}
+
+form{
+    background-color: rgb(170, 221, 255);
+    width: 50vw;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    font-size:1vw;
+    padding-left: 1vw;
+    padding-right:1vw;
+    border-radius: 1vw;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    margin-top: 1vw;
+}
+
+label{
+    margin-bottom: 0.5vw;
+}
+
+input{
+    border:none;
+    height: 1.4vw;
+    border-radius: 0.2vw;
+    font-size: 1vw;
+    
+}
+input[type="text"]{
+    width:15vw;
+}
+
+input[type="email"]{
+    width:20vw;
+}
+
+input[type="tel"]{
+    width:10vw;
+}
+
+input[type="radio"]{
+    height:fit-content;
+
+}
+
+.opcoes-radio{
+    display:flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+
+
+textarea{
+    display: flex;
+    justify-content: center;
+    width:45vw;
+    height:10vw;
+
+}
 
 
 .voltar-inicio{
@@ -210,7 +319,7 @@ body {
 .voltar-inicio a{
     display: flex;
     text-decoration: none;
-    font-size: 2vw;
+    font-size: 1.5vw;
     width:20vw;
     height:5vw;
     background-image:linear-gradient(white,white), linear-gradient(to right,rgb(213, 243, 246), rgb(170, 221, 255));
@@ -221,7 +330,7 @@ body {
     align-items: center;
     justify-content: space-around;
     color:#5dccff;
-    
+
 }
 
 .voltar-inicio a img{
