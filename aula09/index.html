@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,55 +8,97 @@
     <link rel="stylesheet" href="style.css">
     <title>Aula 09</title>
 </head>
+
 <body>
-    <table>
-        <tr>
-            <td><label for="nome-usuario">Nome</label></td>
-            <td><input type="text" name="nome-usuario" placeholder="Digite seu nome"></td>
-        </tr>
-        <tr>
-            <td><label for="E-mail">E-mail pessoal:</label></td>
-            <td><input type="email" name="E-mail" ></td>
-        </tr>
+
+    <h1>Formulário</h1>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td><label for="nome-usuario" >Nome</label></td>
+                <td>&nbsp;<input type="text" name="nome-usuario" placeholder="Digite seu nome"></td>
+            </tr>
+            <tr>
+                <td><label for="E-mail">E-mail pessoal:</label></td>
+                <td>&nbsp;<input type="email" name="E-mail"></td>
+            </tr>
             <td><label for="E-mail-patter">E-mail (patter):</label></td>
-            <td><input type="email" name="E-mail-patter" placeholder="Digite seu email com @"></td>
-        <tr>
-            <td><label for="Senha">Senha:</label></td>
-            <td><input type="password"></td>
-        </tr>
-        <tr>
-            <td><label for="Idade">Idade:</label></td>
-            <td><input type="numeric" name="Idade"></td>
-        </tr>
-        <tr>
-            <td colspan="2"><label for="E-mail">Deixe um comentário:</label>
-            <textarea name="comentarios" id="" cols="70" rows="10"></textarea>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <p>Matéria de interesse:</p>
-                <input type="checkbox" name="Backend" value="Backend">Backend<br>
-                <input type="checkbox"name="Frontend" value="Frontend">Frontend<br>
-                <input type="checkbox"name="FullStack" value="FullStack">FullStack<br>
-            </td>
-            <td>
-                <p>Tipo de Viagem:</p>
-                <input type="radio" name="Negocios" value="Negocios">Negócios<br>
-                <input type="radio"name="Lazer" value="Lazer">Lazer<br>
-                <input type="radio"name="Turismo" value="Turismo">Turismo<br>
-                <input type="radio"name="Acadêmico" value="Acadêmico">Acadêmico<br>
-            </td>
-        </tr>
-        <tr>
-            
+            <td>&nbsp;<input type="email" name="E-mail-patter" placeholder="Digite seu email com @"></td>
+            <tr>
+                <td><label for="Senha">Senha:</label></td>
+                <td>&nbsp;<input type="password"></td>
+            </tr>
+            <tr>
+                <td><label for="Idade">Idade:</label></td>
+                <td>&nbsp;<input type="numeric" name="Idade" size="3" maxlength="3"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="E-mail" style="margin-top:0.2vw">Deixe um comentário:</label><br>
+                    <textarea name="comentarios" id="" cols="70" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Matéria de interesse: <br>
+                    <input type="checkbox" name="Backend" value="Backend">Backend<br>
+                    <input type="checkbox" name="Frontend" value="Frontend">Frontend<br>
+                    <input type="checkbox" name="FullStack" value="FullStack">FullStack<br>
+                </td>
+                <td>
+                    <p>Tipo de Viagem:</p>
+                    <input type="radio" name="Negocios" value="Negocios">Negócios<br>
+                    <input type="radio" name="Lazer" value="Lazer">Lazer<br>
+                    <input type="radio" name="Turismo" value="Turismo">Turismo<br>
+                    <input type="radio" name="Acadêmico" value="Acadêmico">Acadêmico<br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Esporte favorito
+                    <select name="Esporte_favorito" size="5">
+                        <option value="">Selecione</option>
+                        <option value="Futebol">Futebol</option>
+                        <option value="Basquete">Basquete</option>
+                        <option value="Volei">Vôlei</option>
+                        <option value="Tenis">Tênis</option>
+                        <option value="Corrida">Corrida</option>
+                    </select>
+                </td>
+                <td>
+                    Investimentos:
+                    <select name="Tipo_investimento" id="">
+                        <optgroup label="Poupança">
+                            <option value="CDB">CDB</option>
+                            <option value="Tesouro_direto">Tesouro direto</option>
+                        </optgroup>
+                        <optgroup label="Fundos imobiliarios">
+                            <option value="CDI">CDI</option>
+                            <option value="Debentures">Debêntures</option>
+                        </optgroup>
+                        <optgroup label="Criptomoedas">
+                            <option value="Acoes">Ações</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td height="100px">
+                    Escolha uma cor:<input type="color" name="" id="">
+                </td>
+                <td>
+                    selecione um arquivo: <input type="file" name="selecionar_arquivo" id="">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" height="50px">Data e hora envio: <input type="datetime-local" name="Data_e_hora_envio" id=""></td>
+            </tr>
+            <tr>
+                <td height="30px"><input type="submit" value="Enviar"></td>
+                <td><input type="reset" value="Limpar"></td>
+            </tr>
+        </table>
+    </form>
 
-
-        </tr>
-
-
-
-    </table>
-    
 </body>
+
 </html>
